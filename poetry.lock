@@ -35,6 +35,20 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-mysql"
+version = "4.12.0"
+description = "Django-MySQL extends Django's built-in MySQL and MariaDB support their specific features not available on other databases."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django_mysql-4.12.0-py3-none-any.whl", hash = "sha256:1c188ee3a92590da21ce23351c309bb02df3b6611926521d312a9cdf6373c3d0"},
+    {file = "django_mysql-4.12.0.tar.gz", hash = "sha256:9a29b69ad30c85362984903379783b53731ee7b0cef4dfb4eb078f80e24f26d4"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
 name = "mysqlclient"
 version = "2.2.0"
 description = "Python interface to MySQL"
@@ -94,4 +108,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "3249a6c37c6e0c5a8e2203ceef0dc5e3fb4eceb0c89861a876f581557dc671b1"
+content-hash = "5ca668dee54ae0fe36decce92c771d730fa842fee0c59ecc82be0111fa9afda2"

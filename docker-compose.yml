@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  db:
+    container_name: db
+    image: mysql:latest
+    volumes:
+      - .library_db/mysql/:/var/lib/mysql/
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+
+  web:
+    container_name: backend_library
+    build:
+      context: ././
+      dockerfile: Dockerfile
+    expose:
+      - 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/library
+    env_file:
+      - .env
+    depends_on:
+      - db
