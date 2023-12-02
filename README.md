@@ -10,7 +10,7 @@ Installation steps:
 - Clone this repository 
 - Configure Environment Variables
 - Install virtual environment and activate
-    poetry install
-    poetry shell
+    - poetry install
+    - poetry shell
 - Run docker
-    docker-compose up
+    - docker-compose up
